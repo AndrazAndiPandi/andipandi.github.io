@@ -1,0 +1,179 @@
+body{
+    background-color: #a3cef1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+    margin: 30px 15px 0px 100px;
+    margin-bottom: -14px;
+    padding: 0;
+    color: #8b8c89;
+    font-weight: 700;
+    letter-spacing: 10px;
+    vertical-align: baseline;
+}
+.flyer{
+    margin-top: 0;
+    width: 100%;
+    height: 80vh;
+    background-image: url('bcg.jpg');
+    background-size: cover;
+    display: flex;
+    
+    justify-content: center;
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+    /*animation: move 1s linear;*/
+}
+.navbar{
+    background-color: #274c77;
+    animation: move 1s linear;
+}
+.nav-link{
+    font-weight: 700 bold;
+    color: #e7ecef;
+    
+}
+.nav-item.active{
+    background-color: #6096ba;
+    color: #e7ecef;
+}
+.nav-item:hover{
+    background-color: #6096ba;
+    color: #e7ecef;
+}
+.jumbo{
+    margin-top: 45px;
+    margin-right: 10px;
+    width: 30%;
+    height: 50vh;
+    border-radius: 8px 8px;
+    background-color: #8b8c894d;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: moveDown 1s linear;
+}
+.jumbo h1{
+    color: #274c77;
+    font-weight: 700 bold;
+    margin: 0 auto;
+}
+.klet{
+    height: 30vh;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-image: url('klet.jpg');
+    background-size: cover;
+    display: flex;
+    
+    justify-content: center;
+}
+.kombi{
+    height: 30vh;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-image: url('kombiji.jpg');
+    background-size: cover;
+    display: flex;
+    
+    justify-content: center;
+}
+.up{
+    animation: moveUp 1s linear;
+}
+.jumbo p{
+    color: #274c77;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 45px;
+}
+.jumbo h2{
+    color: #274c77;
+    font-weight: 700 bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+h1 img {
+    height: 55px;
+    width: 55px;
+    margin-top: -33px;
+}
+.item{
+    width: 70%;
+}
+
+@media (max-width: 1120px){
+    h1{
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: medium;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5px;
+        margin-bottom: -8px;
+    }
+    h1 img {
+        visibility: hidden;
+    }
+    
+    .navbar{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+      }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes move {
+    from{
+        transform: translateX(-50%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+  }
+
+  @keyframes moveDown {
+    from{
+        transform: translateY(-50%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+  }
+  @keyframes moveUp {
+    from{
+        transform: translateY(150%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+  }

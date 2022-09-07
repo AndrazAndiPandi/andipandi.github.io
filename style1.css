@@ -1,0 +1,97 @@
+body{
+    background-color: #a3cef1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.flyer{
+    position: relative; 
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.flyer::before{
+    content: "";
+      background-image: url('bcg.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: -1;
+      opacity: 0.75;
+}
+.kontakti{
+    margin-top: 35px;
+    width: 40%;
+    height: 300px;
+    border-radius: 8px 8px;
+    background-color: #8b8c894d;
+}
+p{
+    color: #ffffff;  
+    font-size: 2rem;
+    line-height: 0.9;
+    text-align: center;
+    margin-top: 50px;
+}
+h1{
+    margin: 30px 15px 0px 0px;
+    padding-bottom: 0;
+    color: #8b8c89;
+    font-weight: 700;
+}
+.navbar{
+    background-color: #274c77;
+    
+}
+.nav-link{
+    font-weight: 700 bold;
+    color: #e7ecef;
+}
+.nav-item.active{
+    background-color: #6096ba;
+    color: #e7ecef;
+}
+.nav-link:hover{
+    background-color: #6096ba;
+    color: #e7ecef;
+}
+h1 img {
+    height: 55px;
+    width: 55px;
+    margin-top: -33px;
+}
+h1{
+    margin: 30px 15px 0px 100px;
+    margin-bottom: -14px;
+    padding: 0;
+    color: #8b8c89;
+    font-weight: 700;
+    letter-spacing: 10px;
+    vertical-align: baseline;
+}
+.carousel {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-caption{
+    background-color: #8b8c898f;
+    border-radius: 8px;
+}
+#kombi{
+    font-weight: 700 bold;
+    animation: move 3s ease-in-out;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(-2000%) translateY(-50%);
+    }
+    to{
+        transform: translateX(0%) translateY(0%);
+    }
+  }
